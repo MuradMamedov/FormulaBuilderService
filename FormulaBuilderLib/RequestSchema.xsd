@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" 
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Operand">
+   <xs:choice minOccurs="1" maxOccurs="1">
+      <xs:element name="const" type="xs:decimal" />
+      <xs:element name="expression" type="Expression" />
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="Expression">
+    <xs:sequence minOccurs="1" maxOccurs="1">
+      <xs:choice minOccurs="2" maxOccurs="2">
+        <xs:element minOccurs="1" maxOccurs="1" name="operation" type="Operation" />
+        <xs:element minOccurs="2" maxOccurs="2" name="operand" type="Operand" />
+      </xs:choice>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="Operation">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="plus" />
+      <xs:enumeration value="minus" />
+      <xs:enumeration value="mul" />
+      <xs:enumeration value="div" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="Request">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="expression" type="Expression" />
+    </xs:sequence>
+  </xs:complexType>
+   <xs:element name="request" type="Request" />
+</xs:schema>

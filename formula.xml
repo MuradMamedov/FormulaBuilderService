@@ -1,0 +1,19 @@
+<request>
+	<expression>
+		<operation>plus</operation>
+		<operand>
+			<const>20</const>
+		</operand>
+		<operand>
+			<expression>
+				<operand>
+					<const>10</const>
+				</operand>
+				<operation>minus</operation>
+				<operand>
+					<const>5</const>
+				</operand>
+			</expression>
+		</operand>
+	</expression>
+</request>

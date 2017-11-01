@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormulaBuilderLib", "FormulaBuilderLib\FormulaBuilderLib.csproj", "{5EAC3994-673E-4730-B7DA-6B016E65AE50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormulaBuilderConsoleDebug", "FormulaBuilderConsoleDebug\FormulaBuilderConsoleDebug.csproj", "{D55F0D2C-3383-40D6-B705-F852EBF91975}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormulaBuilderUT", "FormulaBuilderUT\FormulaBuilderUT.csproj", "{DD406ADC-EED4-493C-83FA-1C982B1254DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormulaBuilderService", "FormulaBuilderService\FormulaBuilderService.csproj", "{808899C2-2AF5-46F8-A327-7F8D91C76BE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormulaBuilderClient", "FormulaBuilderClient\FormulaBuilderClient.csproj", "{4023D761-EA4C-404D-99BD-C69631E55E48}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5EAC3994-673E-4730-B7DA-6B016E65AE50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EAC3994-673E-4730-B7DA-6B016E65AE50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EAC3994-673E-4730-B7DA-6B016E65AE50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EAC3994-673E-4730-B7DA-6B016E65AE50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D55F0D2C-3383-40D6-B705-F852EBF91975}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D55F0D2C-3383-40D6-B705-F852EBF91975}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D55F0D2C-3383-40D6-B705-F852EBF91975}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D55F0D2C-3383-40D6-B705-F852EBF91975}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD406ADC-EED4-493C-83FA-1C982B1254DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD406ADC-EED4-493C-83FA-1C982B1254DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD406ADC-EED4-493C-83FA-1C982B1254DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD406ADC-EED4-493C-83FA-1C982B1254DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{808899C2-2AF5-46F8-A327-7F8D91C76BE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{808899C2-2AF5-46F8-A327-7F8D91C76BE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{808899C2-2AF5-46F8-A327-7F8D91C76BE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{808899C2-2AF5-46F8-A327-7F8D91C76BE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4023D761-EA4C-404D-99BD-C69631E55E48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4023D761-EA4C-404D-99BD-C69631E55E48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4023D761-EA4C-404D-99BD-C69631E55E48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4023D761-EA4C-404D-99BD-C69631E55E48}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
