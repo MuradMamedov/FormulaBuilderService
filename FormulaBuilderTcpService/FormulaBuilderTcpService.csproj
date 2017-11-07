@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4023D761-EA4C-404D-99BD-C69631E55E48}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>FormulaBuilderClient</RootNamespace>
-    <AssemblyName>FormulaBuilderClient</AssemblyName>
+    <ProjectGuid>{B8864D63-7836-4417-9A9F-49C05222CA06}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FormulaBuilderTcpService</RootNamespace>
+    <AssemblyName>FormulaBuilderTcpService</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,27 +33,34 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
-    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
+    <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SocketListener.cs" />
+    <Compile Include="TcpService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TcpService.Designer.cs">
+      <DependentUpon>TcpService.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TcpClient.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FormulaBuilderTcpService\FormulaBuilderTcpService.csproj">
-      <Project>{b8864d63-7836-4417-9a9f-49c05222ca06}</Project>
-      <Name>FormulaBuilderTcpService</Name>
+    <ProjectReference Include="..\FormulaBuilderLib\FormulaBuilderLib.csproj">
+      <Project>{5eac3994-673e-4730-b7da-6b016e65ae50}</Project>
+      <Name>FormulaBuilderLib</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

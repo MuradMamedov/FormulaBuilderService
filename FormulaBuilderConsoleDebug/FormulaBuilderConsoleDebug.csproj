@@ -35,6 +35,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -57,6 +58,10 @@
     <ProjectReference Include="..\FormulaBuilderService\FormulaBuilderService.csproj">
       <Project>{808899c2-2af5-46f8-a327-7f8d91c76be1}</Project>
       <Name>FormulaBuilderService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormulaBuilderTcpService\FormulaBuilderTcpService.csproj">
+      <Project>{b8864d63-7836-4417-9a9f-49c05222ca06}</Project>
+      <Name>FormulaBuilderTcpService</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

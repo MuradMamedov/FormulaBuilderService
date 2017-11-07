@@ -15,6 +15,17 @@ namespace FormulaBuilderClient
     {
         static void Main(string[] args)
         {
+            TcpMessaging();
+            Console.ReadKey();
+        }
+
+        private static void TcpMessaging()
+        {
+            TcpClient.StartClient();
+        }
+
+        private static void PipeMessaging()
+        {
             var pipeFactory =
                 new ChannelFactory<IFormulaService>(
                     new NetNamedPipeBinding(),
